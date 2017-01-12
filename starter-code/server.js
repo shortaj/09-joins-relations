@@ -21,8 +21,6 @@ app.get('/new', function(request, response) {
   response.sendFile('new.html', {root: '.'});
 });
 
-
-
 // NOTE: Routes for making API calls to enact CRUD Operations on our database
 app.get('/articles/all', function(request, response) {
   let client = new pg.Client(conString);
